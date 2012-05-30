@@ -1,0 +1,15 @@
+jdmca 
+=====
+
+A small C program for displaying one-dimensional cellular automata.
+
+I wrote this sometime in the early '90s. I was in college at the 
+time but I created this for my own amusement. I had a CGI interface
+for it that allowed you to browse the space of automata in a novel 
+way. I'm going to try to recreate that and add it to this project. 
+
+This is dependent on libgd. 
+
+The jdmca program takes a number of options on the command line and
+dumps a GIF file out to stdout. Sorry for the lack of documentation.
+Use the source. 
