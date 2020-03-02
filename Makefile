@@ -1,5 +1,5 @@
 CC=gcc 
-CFLAGS=-Wall -I../../include -L../../lib
+CFLAGS=-Wall -I/opt/local/include -L/opt/local/lib -I/Users/jeremy/include -L/Users/jeremy/lib
 LIBS=-lgd -lm
 
 all: jdmca

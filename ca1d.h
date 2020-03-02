@@ -2,7 +2,7 @@
 #define __CA1D_H 1
 #endif
 
-#define CA_MAX_WIDTH 1024
+#define CA_MAX_WIDTH 8192
 
 typedef struct {
     int width;

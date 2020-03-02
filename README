@@ -13,3 +13,21 @@ This is dependent on libgd.
 The jdmca program takes a number of options on the command line and
 dumps a GIF file out to stdout. Sorry for the lack of documentation.
 Use the source. 
+
+Overview
+--------
+
+This is an implementation of a class of 1D cellular automata where 
+cells have one of two states and the neighborhood includes the cell,
+the two neighbors to the left of the cell, and the two neighbors to 
+the right. 
+
+The "ruleset" for this class of CAs can be compactly represented as
+a 32-bit value such as an 32-bit unsigned integer. The 5-bit
+neighborhood is interpreted as an integer index between 0 and 31.
+The 32-bit integer "ruleset" is right-shifted by that index value, 
+and the result is bitwise-anded with 1 giving the value of its least
+significant bit. This bit becomes the new value of the cell. 
+
+The total number of rulesets for this class of CAs is, obviously,
+2^32. 
